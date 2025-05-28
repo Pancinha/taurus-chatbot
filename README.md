@@ -1,44 +1,69 @@
-# 🧠 Taurus ChatBot
+# 🧠 Taurus Chatbot
 
-Este projeto é um protótipo de chatbot com integração de Inteligência Artificial (OpenAI) desenvolvido como parte de um desafio FullStack. O objetivo é demonstrar como a IA pode auxiliar nas rotinas de uma empresa corporativa, com uma interface moderna e fácil de usar.
+Este projeto é um protótipo funcional de chatbot com integração de Inteligência Artificial via **OpenRouter**, desenvolvido como parte do desafio FullStack da empresa fictícia Taurus.
+
+O objetivo é demonstrar como a IA pode auxiliar nas rotinas de uma empresa corporativa, entregando uma interface moderna, responsiva e fácil de usar.
 
 ---
 
-A proposta foi desenvolver uma aplicação com:
+## 📋 Proposta
 
-- Uma interface web responsiva (React)
-- Integração com uma API de IA (OpenAI)
-- Experiência de chat simples e amigável
-- Visual corporativo alinhado com a empresa fictícia *Taurus*
-- Armazenamento local das conversas (em breve)
+- Interface web responsiva construída com React e Vite  
+- Backend em Node.js com Express para intermediar a comunicação com a API OpenRouter  
+- Integração com a API OpenRouter para gerar respostas naturais e contextualizadas  
+- Visual corporativo simples e alinhado com a identidade da empresa fictícia *Taurus*  
+- Armazenamento local (em breve) para registrar conversas
 
 ---
 
 ## 🧪 Tecnologias Utilizadas
 
 ### Frontend
-- React
-- TailwindCSS
+- React  
+- Vite  
+- CSS
 
 ### Backend
-- Node.js
-- Express
-- OpenAI SDK
+- Node.js  
+- Express  
 - Dotenv
+
+### IA
+- OpenRouter API (modelo GPT-based)
 
 ---
 
-## Como Executar Localmente
+## 🚀 Como Executar Localmente
 
 ### Pré-requisitos
 
-- Node.js 18+ instalado
-- Conta na OpenAI (com API Key)
+- Node.js 18+ instalado  
+- Conta no [OpenRouter](https://openrouter.ai) para obter a API Key gratuita
 
-### Instalação
+### Passos para executar
 
-Clone o repositório:
+1. Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/taurus-chatbot.git
+git clone https://github.com/Pancinha/taurus-chatbot.git
 cd taurus-chatbot
+
+2. Instale as dependências do backend e frontend:
+cd backend
+npm install
+cd ../frontend
+npm install
+
+3. Configure sua chave da API OpenRouter:
+Acesse https://openrouter.ai e crie sua conta.
+Gere sua chave de API.
+Crie um arquivo .env na pasta backend com o seguinte conteúdo: OPENROUTER_API_KEY=sua-chave-aqui
+
+4. Inicie os servidores:
+cd backend
+npm run dev
+cd frontend
+npm run dev
+
+5. Acesse a aplicação no navegador:
+
